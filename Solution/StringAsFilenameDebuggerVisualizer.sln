@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{02EE862C-78FD-482F-AFEF-43712099AABB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{B4D508C7-C4F2-4CF0-B5FD-129B267499C7}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Package", "Package\Package.csproj", "{02EE862C-78FD-482F-AFEF-43712099AABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExtensions", "StringExtensions\StringExtensions.csproj", "{E38F2DBA-8722-4F09-A98C-62C419E94369}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{02EE862C-78FD-482F-AFEF-43712099AABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02EE862C-78FD-482F-AFEF-43712099AABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02EE862C-78FD-482F-AFEF-43712099AABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38F2DBA-8722-4F09-A98C-62C419E94369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38F2DBA-8722-4F09-A98C-62C419E94369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38F2DBA-8722-4F09-A98C-62C419E94369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38F2DBA-8722-4F09-A98C-62C419E94369}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

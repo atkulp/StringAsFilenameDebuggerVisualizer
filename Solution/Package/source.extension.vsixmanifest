@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="StringOpenFileDebugger.8386b8d5-d629-4ebc-a6f8-d41cdc1342fb" Version="1.0" Language="en-US" Publisher="Arian T. Kulp" />
+        <Identity Id="StringOpenFileDebugger.8386b8d5-d629-4ebc-a6f8-d41cdc1342fb" Version="1.1" Language="en-US" Publisher="Arian T. Kulp" />
         <DisplayName>Debugger Visualizer Pack by Arian</DisplayName>
         <Description xml:space="preserve">Various debugging visualizers including open file from filename in string variable.</Description>
         <Icon>Resources\StringDebuggerPackage.ico</Icon>
@@ -15,7 +15,7 @@
         <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" d:Source="Installed" Version="[15.0]" />
     </Dependencies>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.Net.Component.4.6.1.TargetingPack" Version="[15.0.26621.2,16.0)" DisplayName=".NET Framework 4.6.1 targeting pack" />
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />

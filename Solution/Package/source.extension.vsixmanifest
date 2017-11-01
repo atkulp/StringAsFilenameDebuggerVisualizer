@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="StringOpenFileDebugger.8386b8d5-d629-4ebc-a6f8-d41cdc1342fb" Version="1.1" Language="en-US" Publisher="Arian T. Kulp" />
+        <Identity Id="StringOpenFileDebugger.8386b8d5-d629-4ebc-a6f8-d41cdc1342fb" Version="1.2" Language="en-US" Publisher="Arian T. Kulp" />
         <DisplayName>Debugger Visualizer Pack by Arian</DisplayName>
         <Description xml:space="preserve">Various debugging visualizers including open file from filename in string variable.</Description>
-        <Icon>Resources\StringDebuggerPackage.ico</Icon>
+        <Icon>Resources\noun_586565_cc.ico</Icon>
         <Tags>debugger, string, visualizer, open file</Tags>
     </Metadata>
     <Installation>

@@ -68,15 +68,18 @@ namespace ArianKulp.DebuggerExtensions
 
             if (fn != null && ServiceProvider.GlobalProvider.GetService(typeof(DTE)) is DTE2 dte2)
             {
-                if (!File.Exists(fn))
+                if (!File.Exists(fn) && !Directory.Exists(fn))
                 {
-                    ShowError("File does not exist");
+                    ShowError("File/folder does not exist");
                     return;
                 }
 
+                var attr = File.GetAttributes(fn);
+                var isFolder = (attr & FileAttributes.Directory) != 0;
+
                 // combine the arguments together
                 // it doesn't matter if there is a space after ','
-                string argument = "/select, \"" + fn + "\"";
+                string argument = isFolder ? $"\"{fn}\"" : $"/select, \"{fn}\"";
 
                 System.Diagnostics.Process.Start("explorer.exe", argument);
             }
